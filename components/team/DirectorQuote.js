@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import CONSTRAINTS from "constants/constraints";
 
-import directors from "assets/img/Directors.png";
-
 import InlineGradient from "components/shared/InlineGradient";
 
 const Wrapper = styled.div`
@@ -33,6 +31,10 @@ const Wrapper = styled.div`
 const DirectorImage = styled.div`
   img {
     border-radius: 35px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 `;
 
@@ -81,11 +83,15 @@ function DirectorQuote() {
   return (
     <Wrapper>
       <DirectorImage>
-        <Image
-          src={directors}
-          width={300}
-          height={263}
-          alt="HackUTD's Director"
+        <img
+          src="/Directors.png"
+          alt="Directors of HackUTD"
+          style={{ 
+            width: "300px", 
+            height: "auto", 
+            borderRadius: "35px",
+            maxWidth: "100%"
+          }}
         />
       </DirectorImage>
       <EncouragingText>
