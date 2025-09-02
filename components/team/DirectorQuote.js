@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import CONSTRAINTS from "constants/constraints";
 
-import salman_purva from "assets/img/salman_purva.png";
+import directors from "assets/img/Directors.png";
 
 import InlineGradient from "components/shared/InlineGradient";
 
@@ -82,7 +82,7 @@ function DirectorQuote() {
     <Wrapper>
       <DirectorImage>
         <Image
-          src={salman_purva}
+          src={directors}
           width={300}
           height={263}
           alt="HackUTD's Director"
@@ -98,9 +98,9 @@ function DirectorQuote() {
         <br />
         <Citation>
           <Name>
-            <Hyphen>–</Hyphen>Salman Jaher &amp; Purva Pawar
+            <Hyphen>–</Hyphen>Kelly Zhou &amp; Addy Dunning
           </Name>
-          <Title>Co-Directors, HackUTD &apos;24</Title>
+          <Title>Co-Directors, HackUTD &apos;25</Title>
         </Citation>
       </EncouragingText>
     </Wrapper>
