@@ -135,7 +135,7 @@ function HackPortalButton() {
           <Description>
             All-in-one hackathon management software. Modular and secure.
           </Description>
-          <LearnMore href="https://github.com/acmutd/hackportal">Learn More <FaChevronCircleRight /></LearnMore>
+          <LearnMore href="https://github.com/hackutd/hackportal">Learn More <FaChevronCircleRight /></LearnMore>
         </RightContent>
       </SubContainer>
 
