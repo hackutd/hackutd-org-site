@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from 'next/link';
 import styled, { keyframes } from "styled-components";
-import { GoThreeBars } from "react-icons/go";
+import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 import CONSTRAINTS from "constants/constraints";
@@ -111,9 +111,9 @@ function MobileNav() {
   return (
     <>
       <NavButton onClick={() => { setMobilePressed(true) }}>
-        <Hamburger>
-          <GoThreeBars />
-        </Hamburger>
+                            <Hamburger>
+                      <FaBars />
+                    </Hamburger>
       </NavButton>
       {mobilePressed && (
         <MobileSelector>

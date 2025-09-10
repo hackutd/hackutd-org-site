@@ -9,9 +9,6 @@ import More from 'components/mission/More';
 import CONSTRAINTS from 'constants/constraints';
 import ThemeContext from 'context/ThemeContext';
 
-import default_group from 'assets/img/group/default.jpeg';
-import fun_group from 'assets/img/group/fun.jpeg';
-
 const Container = styled.div`
   width: 100%;
   max-width: ${CONSTRAINTS.DEFAULT_RAW + 150}px;
@@ -57,11 +54,13 @@ const ImageContainer = styled.div`
 `
 
 const TeamImage = styled(Image)`
-  position: absolute;
-  object-fit: cover;
+  object-fit: contain;
   transition: opacity 0.5s;
   border-radius: 45px;
-
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 
   ${props => props.$fun && `
     opacity: 0.01; // hack for some obscure react issue
@@ -105,7 +104,7 @@ export default function Mission() {
       <Header title="Our Mission" givenId="mission" />
       <Grid>
         <ImageContainer>
-          <TeamImage src={default_group} objectFit="cover" layout="fill" alt="a team picture of the HackUTD organizers"/>
+          <TeamImage src="/group/default.jpeg" width={400} height={400} alt="a team picture of the HackUTD organizers"/>
         </ImageContainer>
         <Description>
           <p>
@@ -113,13 +112,14 @@ export default function Mission() {
             24-hour events with challenges, free food & merch, and fun games & activities.
           </p>
           <p style={{marginTop: 20}}>
-            We host HackUTD, Texas’ largest hackathon. We also assist with other hackathons at UTD,
+            We host HackUTD, North America&apos;s largest 24 university hackathon. We also assist with other hackathons at UTD,
             and host helpful workshops that anyone can attend. Regardless of what we’re working on,
             we aim to make our hackathons <InlineGradient>accessible</InlineGradient> and <InlineGradient>open to everyone</InlineGradient>. Glad to see you here!
           </p>
           <LearnMore onClick={() => setShowMore(true)}>More about us</LearnMore>
           <More isShown={showMore} callback={() => setShowMore(false)}/>
         </Description>
+
       </Grid>
       {!dark && <AccentLogo src={"svg/accent_logo.svg"} />}
       {dark && <AccentLogo src={"svg/accent_logo_dark.svg"} />}

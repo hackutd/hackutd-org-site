@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 import { useState, useEffect, useContext } from 'react';
+import dynamic from 'next/dynamic';
 
 import CONSTRAINTS from 'constants/constraints';
 
 import NavBar from 'components/navigation/Navbar';
-import AnimatedLogo from 'components/hero/AnimatedLogo';
 import StartButton from 'components/hero/StartButton';
 import Sparkles from 'components/Sparkles';
 import SiteButton from 'components/hero/SiteButton';
 import DarkModeToggle from 'components/shared/DarkModeToggle';
 
 import ThemeContext from 'context/ThemeContext';
+
+const AnimatedLogo = dynamic(() => import('./AnimatedLogo'), { ssr: false });
 
 
 const Container = styled.div`
@@ -153,7 +155,7 @@ export default function Hero() {
             <AnimatedLogo />
             <SupplementalText top>We are</SupplementalText>
             <Title>HackUTD</Title>
-            <SupplementalText>Texas&apos; largest university hackathon.</SupplementalText>
+            <SupplementalText>Largest 24 hour university hackathon in North America.</SupplementalText>
             {/* Enable once we have a website set up. */}
             <SiteButton />
           </WelcomeContent>

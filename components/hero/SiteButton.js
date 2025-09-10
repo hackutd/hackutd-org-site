@@ -77,8 +77,8 @@ const Cursor = styled.img`
 
 export default function SiteButton() {
   return (
-    <Button href={LINKS.HACKUTD_24_SITE}>
-      <Logo src="/svg/HackUTD24.svg" />
+    <Button href={LINKS.HACKUTD_25_SITE}>
+      <Logo src="/HackUTD25.png" />
       <Cursor src="/svg/cursor.svg" />
     </Button>
   );

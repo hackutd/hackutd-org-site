@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import CONSTRAINTS from "constants/constraints";
 
-import salman_purva from "assets/img/salman_purva.png";
-
 import InlineGradient from "components/shared/InlineGradient";
 
 const Wrapper = styled.div`
@@ -33,6 +31,10 @@ const Wrapper = styled.div`
 const DirectorImage = styled.div`
   img {
     border-radius: 35px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 `;
 
@@ -81,11 +83,15 @@ function DirectorQuote() {
   return (
     <Wrapper>
       <DirectorImage>
-        <Image
-          src={salman_purva}
-          width={300}
-          height={263}
-          alt="HackUTD's Director"
+        <img
+          src="/Directors.png"
+          alt="Directors of HackUTD"
+          style={{ 
+            width: "300px", 
+            height: "auto", 
+            borderRadius: "35px",
+            maxWidth: "100%"
+          }}
         />
       </DirectorImage>
       <EncouragingText>
@@ -98,9 +104,9 @@ function DirectorQuote() {
         <br />
         <Citation>
           <Name>
-            <Hyphen>–</Hyphen>Salman Jaher &amp; Purva Pawar
+            <Hyphen>–</Hyphen>Kelly Zhou &amp; Addy Dunning
           </Name>
-          <Title>Co-Directors, HackUTD &apos;24</Title>
+          <Title>Co-Directors, HackUTD &apos;25</Title>
         </Citation>
       </EncouragingText>
     </Wrapper>

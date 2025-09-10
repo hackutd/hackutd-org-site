@@ -47,11 +47,10 @@ export function HackBubble({ img, selected, data }) {
         <Container selected={selected}>
             <Link href={data.websiteLink}>
                 <Image
-                    src={require(`assets/img/hack_bubbles/Slide${img}.png`)}
+                    src={`/hack_bubbles/Slide${img}.png`}
                     width={1035}
                     height={561}
-                    alt="HackUTD's Director"
-                    objectFit="cover"
+                    alt={`HackUTD ${data.title}`}
                 />
             </Link>
         </Container>

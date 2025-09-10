@@ -1,11 +1,11 @@
-// raster imports
-import utd_department_cs from "assets/img/sponsors/utd_department_cs.png";
-import toyota from "assets/img/sponsors/toyota.png";
-import eog from "assets/img/sponsors/eog.png";
-import sg from "assets/img/sponsors/sg.png";
-import cbre from "assets/img/sponsors/CBRE.png";
-import rc from "assets/img/sponsors/rc.png";
-import axxess from "assets/img/sponsors/axxess.png";
+// raster imports - moved to public folder
+const utd_department_cs = "/sponsors/utd_department_cs.png";
+const toyota = "/sponsors/toyota.png";
+const eog = "/sponsors/eog.png";
+const sg = "/sponsors/sg.png";
+const cbre = "/sponsors/CBRE.png";
+const rc = "/sponsors/rc.png";
+const axxess = "/sponsors/axxess.png";
 // SVG imports
 // for further context, the reason these are in separate locations is because I didn't want to work on configuring
 // an SVG loader for webpack for the default import; this could be a potential future improvement

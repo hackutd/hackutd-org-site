@@ -6,7 +6,7 @@ import SPONSORS from "constants/sponsors";
 import CONSTRAINTS from "constants/constraints";
 import ThemeContext from "context/ThemeContext";
 
-import shadow from "assets/img/half_shadow.png";
+
 import LogoContext from "context/LogoContext";
 import { useDelayUnmount } from "hooks/useDelayUnmount";
 
@@ -253,10 +253,10 @@ export default function SponsorGrid() {
       </Three>
 
       <ShadowHolder>
-        <Image src={shadow} layout="fill" objectFit="contain" />
+        <Image src="/half_shadow.png" layout="fill" objectFit="contain" />
       </ShadowHolder>
       <ShadowHolder right>
-        <Image src={shadow} layout="fill" objectFit="contain" />
+        <Image src="/half_shadow.png" layout="fill" objectFit="contain" />
       </ShadowHolder>
     </Container>
   );

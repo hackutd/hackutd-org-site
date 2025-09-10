@@ -6,9 +6,6 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 
 import ThemeContext from "context/ThemeContext";
 
-import galaxy from 'assets/img/galaxy.jpeg';
-import sky from 'assets/img/sky-4.jpg';
-
 import CONSTRAINTS from 'constants/constraints';
 
 const BASE_WIDTH = 140;
@@ -139,8 +136,8 @@ export default function DarkModeToggle() {
     <Container >
       
     <Wrapper>
-      <Galaxy><Image src={galaxy} width={BASE_WIDTH} height={BASE_HEIGHT} /></Galaxy>
-      <Sunrise $on={!dark}><Image src={sky} width={BASE_WIDTH} height={BASE_HEIGHT} /></Sunrise>
+      <Galaxy><Image src="/galaxy.jpeg" width={BASE_WIDTH} height={BASE_HEIGHT} /></Galaxy>
+      <Sunrise $on={!dark}><Image src="/sky-4.jpg" width={BASE_WIDTH} height={BASE_HEIGHT} /></Sunrise>
       <FaMoon />
       <FaSun />
     </Wrapper>
