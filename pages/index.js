@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>HackUTD | North America&apos;s Largest 24 Hour University Hackathon</title>
+      <title>HackUTD</title>
       <meta 
         name="description" 
         content="We plan and host HackUTD, North America&apos;s largest 24 hour university-run hackathon. We also assist other hackathons as part of our greater endeavor to use hacking to bring people together to learn new things."

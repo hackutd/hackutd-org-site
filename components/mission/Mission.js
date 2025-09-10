@@ -112,7 +112,7 @@ export default function Mission() {
             24-hour events with challenges, free food & merch, and fun games & activities.
           </p>
           <p style={{marginTop: 20}}>
-            We host HackUTD, Texas’ largest hackathon. We also assist with other hackathons at UTD,
+            We host HackUTD, North America's largest 24 university hackathon. We also assist with other hackathons at UTD,
             and host helpful workshops that anyone can attend. Regardless of what we’re working on,
             we aim to make our hackathons <InlineGradient>accessible</InlineGradient> and <InlineGradient>open to everyone</InlineGradient>. Glad to see you here!
           </p>
