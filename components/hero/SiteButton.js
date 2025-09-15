@@ -52,6 +52,7 @@ const Button = styled.a`
 const Logo = styled.img`
   height: 100%;
   transform: translateY(-3px);
+  border-radius: 20px;
 `;
 
 const animateCursor = keyframes`
