@@ -38,6 +38,6 @@ export default [
   { name: "Kavi Namburi", team: "Marketing" },
   { name: "Tien Phan", team: "Marketing" },
   { name: "Ayusha Timalsena", team: "Finance" },
-  { name: "Sree Aastish Bommisetty", team: "Finance" },
+  { name: "Sree Aatish Bommisetty", team: "Finance" },
   { name: "Leeza Paul", team: "Finance" },
 ];
