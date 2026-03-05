@@ -6,6 +6,10 @@ const sg = "/sponsors/sg.png";
 const cbre = "/sponsors/CBRE.png";
 const rc = "/sponsors/rc.png";
 const axxess = "/sponsors/axxess.png";
+const cognizant = "/sponsors/cognizant.png";
+const scale = "/sponsors/scale.png";
+const nvidia = "/sponsors/nvidia.png";
+const nmc2 = "/sponsors/nmc2.png";
 // SVG imports
 // for further context, the reason these are in separate locations is because I didn't want to work on configuring
 // an SVG loader for webpack for the default import; this could be a potential future improvement
@@ -38,6 +42,7 @@ const SNAP_AR = `${SVG_LOC}/SnapAR.png`;
 const SNAP_GHOST = `${SVG_LOC}/SnapGhost.png`;
 const INFOSYS = `${SVG_LOC}/Infosys.png`;
 const PINATA = `${SVG_LOC}/pinata.png`;
+const tmobile = `${SVG_LOC}/tmobile.svg`;
 
 const SPONSORS = {
   // MARK: - Added for HackUTD IX Sponsors
@@ -214,6 +219,31 @@ const SPONSORS = {
     name: "Infosys",
     img: INFOSYS,
     link: "https://www.infosys.com/",
+  },
+  COGNIZANT: {
+    name: "Cognizant",
+    img: cognizant,
+    link: "https://www.cognizant.com/",
+  },
+  SCALE: {
+    name: "Scale AI",
+    img: scale,
+    link: "https://scale.com/",
+  },
+  NVIDIA: {
+    name: "NVIDIA",
+    img: nvidia,
+    link: "https://www.nvidia.com/",
+  },
+  NMC2: {
+    name: "NMC2",
+    img: nmc2,
+    link: "https://www.nmc2.com/",
+  },
+  T_MOBILE: {
+    name: "T-Mobile",
+    img: tmobile,
+    link: "https://www.t-mobile.com/",
   },
 };
 
