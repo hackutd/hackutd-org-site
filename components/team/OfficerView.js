@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
 
+const PLACEHOLDER_IMAGE = "/headshots-2026/poyo.png";
+
 const Wrapper = styled.div`
   // flexy
   display: flex;
@@ -36,12 +38,14 @@ const NormalHolder = styled.div`
   }
 `;
 export default function OfficerView({ data, index }) {
+  const imageSrc = data.image ? `/headshots-2026/${data.image}` : PLACEHOLDER_IMAGE;
+
   return (
     <Wrapper>
       <Holder>
         <NormalHolder>
           <Image
-            src={`/headshots/${data.name.split(" ")[0]}.png`}
+            src={imageSrc}
             width={200}
             height={200}
             alt={`Image of ${data.name}, a HackUTD Officer.`}

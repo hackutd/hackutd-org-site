@@ -1,8 +1,33 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import styled from "styled-components";
 import GlobalStyle from "components/GlobalStyle";
 import ThemeContext from "context/ThemeContext";
 import LogoContext from "context/LogoContext";
+
+import CONSTRAINTS from "constants/constraints";
+
+const TrustBadge = styled.a`
+  display: block;
+  max-width: 72px;
+  min-width: 46px;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  width: clamp(46px, 5vw, 72px);
+  z-index: 10000;
+
+  @media only screen and (max-width: 1100px) {
+    top: 6px;
+    width: 60px;
+  }
+
+  ${CONSTRAINTS.DEFAULT_BP} {
+    left: 10px;
+    top: 10px;
+    width: 48px;
+  }
+`;
 
 function MyApp({ Component, pageProps }) {
   // https://stackoverflow.com/questions/41030361/how-to-update-react-context-from-inside-a-child-component
@@ -52,6 +77,18 @@ function MyApp({ Component, pageProps }) {
           }}
         />
       </Head>
+      <TrustBadge
+        id="mlh-trust-badge"
+        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="https://logged-assets.s3.amazonaws.com/trust-badge/2027/mlh-trust-badge-2027-black.svg"
+          alt="Major League Hacking 2026 Hackathon Season"
+          style={{ width: "100%" }}
+        />
+      </TrustBadge>
       <GlobalStyle dark={dark} />
       <ThemeContext.Provider value={value}>
         <LogoContext.Provider

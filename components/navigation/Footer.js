@@ -106,7 +106,17 @@ export default function Footer() {
         </Row>
         <Row>
           <CuteMessage>There&apos;s no HackUTD...without <img src={'svg/u_love.svg'} alt="Letter 'U' surrounded by a heart" />™</CuteMessage>
-          <GetInTouch>Get in Touch: <a href={LINKS.INDUSTRY_MAIL_LINK}>hello@hackutd.co</a></GetInTouch>
+          <GetInTouch>
+            Get in Touch: <a href={LINKS.INDUSTRY_MAIL_LINK}>hello@hackutd.co</a>
+            <br />
+            <a
+              href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              MLH Code of Conduct
+            </a>
+          </GetInTouch>
         </Row>
       </SubContainer>
     </Container>

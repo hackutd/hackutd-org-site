@@ -25,11 +25,7 @@ const Container = styled.div`
   }
   // hacky way to make it look ok on mobile
   ${CONSTRAINTS.DEFAULT_BP} {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: auto;
-    transform: scale(0.88);
+    display: none;
   }
 `
 

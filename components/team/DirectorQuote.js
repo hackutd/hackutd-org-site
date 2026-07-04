@@ -84,7 +84,7 @@ function DirectorQuote() {
     <Wrapper>
       <DirectorImage>
         <img
-          src="/Directors.png"
+          src="/headshots-2026/DIRECTORS.JPG"
           alt="Directors of HackUTD"
           style={{ 
             width: "300px", 
@@ -104,9 +104,9 @@ function DirectorQuote() {
         <br />
         <Citation>
           <Name>
-            <Hyphen>–</Hyphen>Kelly Zhou &amp; Addy Dunning
+            <Hyphen>–</Hyphen>Veer Shah &amp; Alan Roybal
           </Name>
-          <Title>Co-Directors, HackUTD &apos;25</Title>
+          <Title>Co-Directors, HackUTD &apos;26</Title>
         </Citation>
       </EncouragingText>
     </Wrapper>
