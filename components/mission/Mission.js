@@ -104,7 +104,7 @@ export default function Mission() {
       <Header title="Our Mission" givenId="mission" />
       <Grid>
         <ImageContainer>
-          <TeamImage src="/group/default.jpeg" width={400} height={400} alt="a team picture of the HackUTD organizers"/>
+          <TeamImage src="/headshots-2026/TEAM.jpg" width={400} height={400} alt="a team picture of the HackUTD organizers"/>
         </ImageContainer>
         <Description>
           <p>

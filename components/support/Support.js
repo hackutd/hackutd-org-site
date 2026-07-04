@@ -6,6 +6,7 @@ import Header from 'components/shared/Header';
 import SocialButtons from 'components/support/SocialButtons';
 import InlineGradient from 'components/shared/InlineGradient';
 import GetInTouchButton from 'components/support/GetInTouchButton';
+import InterestFormButton from 'components/support/InterestFormButton';
 import SmallDivider from 'components/shared/SmallDivider';
 import PartnerHackathons from 'components/support/PartnerHackathons';
 
@@ -58,6 +59,16 @@ export default function Support() {
         will benefit you!
       </Description>
       <GetInTouchButton />
+      <SubHeader>Hack Interest</SubHeader>
+      <Description>
+        Want to keep up with HackUTD updates or let us know you&apos;re interested?
+        Fill out the interest form and we&apos;ll send relevant updates closer to the event.
+      </Description>
+      <InterestFormButton />
+      <SubHeader>Prospective Dates and Location for HackUTD 2026</SubHeader>
+      <Description>
+        Dates will most likely be November 14-15, and the location will be the University of Texas at Dallas.
+      </Description>
       <SmallDivider />
       <SubHeader partner>Partner Hackathons</SubHeader>
       <PartnerHackathons />
