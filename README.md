@@ -1,4 +1,9 @@
-# HackUTD Organizer Site
+# HackUTD Organizer Site - DEPRECATED
+
+> [!WARNING]
+> This repository is deprecated and is no longer actively maintained.
+>
+> HackUTD's current website is maintained in the [hackutd/hackutd-co](https://github.com/hackutd/hackutd-co) repository.
 
 ## Design 
 
